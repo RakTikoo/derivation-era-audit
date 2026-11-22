@@ -1,0 +1,12 @@
+{
+ "run": 1,
+ "status": "CONTROL FAILURE - aborted before any gate number was read",
+ "controls": {
+  "C0_rank_identity": 3,
+  "C0_rank_zero": 0,
+  "C1_deformed_law_nonassoc": true,
+  "C2_mpmath_deriv_err": "3.1111036246730711027140507658139765674229689316006e-22",
+  "ALL_CONTROLS_PASS": false
+ },
+ "cause": "control-design error: central-difference step h=1e-30 at 50 dps amplifies sin roundoff (~1e-50 / 2e-30 ~ 5e-21). Fixed in run 2 (h=1e-15, threshold 1e-25). No gate item was computed in run 1."
+}

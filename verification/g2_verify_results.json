@@ -1,0 +1,72 @@
+{
+ "seed": 20261121,
+ "controls": {
+  "C0_rank_identity": 3,
+  "C0_rank_zero": 0,
+  "C1_deformed_law_nonassoc": true,
+  "C2_mpmath_deriv_err": "1.5922297625782717769820839501139339956249275980867e-31",
+  "ALL_CONTROLS_PASS": true
+ },
+ "items": {
+  "i_weinberg": {
+   "rank_3legs": 2,
+   "rank_4legs": 3,
+   "minor_polynomial": "a0*b1 - a1*b0",
+   "minor_identically_zero": false,
+   "expected": {
+    "rank_3legs": 2,
+    "rank_4legs": 3,
+    "minor_identically_zero": false
+   },
+   "PASS": true
+  },
+  "i_ignatowski": {
+   "associativity_numerator_identically_zero": true,
+   "invariant_speed_check (k=s^2, u=1/s)": "1/s",
+   "galilean_limit": "u + v",
+   "expected": {
+    "associativity_numerator_identically_zero": true,
+    "invariant_speed_check (k=s^2, u=1/s)": "1/s",
+    "galilean_limit": "u + v"
+   },
+   "PASS": true
+  },
+  "ii_axion": {
+   "worst_abs_theta_eff_min": "0.0",
+   "tracking_slope_d_output_d_input": "0 (every sampled output is 0)",
+   "n_samples": 36,
+   "expected_worst": "0",
+   "PASS": true
+  },
+  "ii_picking_controls": {
+   "washboard_slope_dxmin_dc_exact": "1",
+   "G26-2_functional_minimum": 0.3441311542550502,
+   "G26-2_recorded_minimum": 0.3441311542550502,
+   "G26-2_minimum_abs_diff": 0.0,
+   "G26-2_tracking_slope_dxstar_da": -0.01679188092706832,
+   "expected": {
+    "washboard_slope": "1 (nonzero: picking)",
+    "minimum_abs_diff": "<1e-12",
+    "tracking_slope": "nonzero"
+   },
+   "PASS": true
+  },
+  "iii_spot": {
+   "koide_Q": 0.6666605114773855,
+   "koide_Q_recorded": 0.6666644634,
+   "koide_Q_abs_diff": 3.951922614486847e-06,
+   "starobinsky_N": 56.98005698005695,
+   "starobinsky_N_recorded": 56.98,
+   "starobinsky_N_range_from_bullseye_error": [
+    50.89058524173028,
+    64.72491909385106
+   ],
+   "dns_dN": 0.0006160050000000006,
+   "dns_dN_recorded": 0.0006160050000000006,
+   "tracker_dlnOmega_dlnlambda": "-2",
+   "tracker_recorded": "-2",
+   "PASS": true
+  }
+ },
+ "ALL_PASS": true
+}
